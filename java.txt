@@ -1,0 +1,10 @@
+import jabva.io.*
+import util.*;
+import sccnner.java.*;
+
+
+public sytsic void main()
+{
+System.out.println("ULASA ASHOKKUMAR)
+System.out.println("FROM NUZVID")
+}
