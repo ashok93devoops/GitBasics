@@ -1,0 +1,55 @@
+---
+# This is a sample YAML file demonstrating various data structures.
+
+# Scalar values:
+name: John Doe
+age: 30
+isStudent: true
+height: 1.75 # meters
+favorite_number: 42
+
+# Lists (sequences):
+hobbies:
+  - Reading
+  - Hiking
+  - Coding
+  - Photography
+
+# Dictionaries (mappings):
+address:
+  street: 123 Main St
+  city: Anytown
+  zipCode: "12345" # String representation for zip codes
+
+# Nested structures:
+education:
+  university: State University
+  degree: Bachelor of Science
+  major: Computer Science
+  courses:
+    - name: Data Structures
+      credits: 3
+    - name: Algorithms
+      credits: 3
+    - name: Web Development
+      credits: 4
+
+# Multi-line string using literal style (preserves newlines):
+description: |
+  John is a passionate developer with a strong interest in open-source projects.
+  He enjoys learning new technologies and contributing to the community.
+
+# Multi-line string using folded style (folds newlines into spaces):
+quote: >
+  "The only way to do great work is to love what you do."
+  - Steve Jobs
+
+# Anchors and aliases for reusability:
+default_settings: &default_settings
+  theme: dark
+  language: en_US
+
+user_settings:
+  <<: *default_settings # Merges default_settings
+  notifications: true
+  timezone: America/New_York
